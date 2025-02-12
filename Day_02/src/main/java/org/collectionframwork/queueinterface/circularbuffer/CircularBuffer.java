@@ -2,7 +2,7 @@ package org.collectionframwork.queueinterface.circularbuffer;
 
 import java.util.Arrays;
 
-class CircularBuffer {
+public class CircularBuffer {
     private int[] queue;
     private int size, head, tail, count;
     public CircularBuffer(int size) {
