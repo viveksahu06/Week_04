@@ -8,4 +8,8 @@ class Patient {
         this.name = name;
         this.severity = severity;
     }
+
+    public String getName(){
+        return name;
+    }
 }
