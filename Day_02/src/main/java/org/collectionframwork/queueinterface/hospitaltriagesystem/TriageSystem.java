@@ -2,7 +2,7 @@ package org.collectionframwork.queueinterface.hospitaltriagesystem;
 
 import java.util.PriorityQueue;
 
-class TriageSystem {
+public class TriageSystem {
     private PriorityQueue<Patient> queue;
 
     public TriageSystem() {
@@ -13,15 +13,17 @@ class TriageSystem {
         queue.add(new Patient(name, severity));
     }
 
-    public void processPatients() {
+    public String processPatients() {
+        StringBuilder result = new StringBuilder();
 
         while (!queue.isEmpty()) {
             Patient patient = queue.poll();
-            System.out.print(patient.name);
+            result.append(patient.getName());
             if (!queue.isEmpty()) {
-                System.out.print(", ");
+                result.append(", ");
             }
         }
-        System.out.println(".");
+        result.append(".");
+        return result.toString();
     }
 }
