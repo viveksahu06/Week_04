@@ -12,6 +12,6 @@ public class Main {
         // Processing patients
 
         System.out.println("Order of treatment:");
-        triage.processPatients();
+        System.out.println(triage.processPatients());
     }
 }
