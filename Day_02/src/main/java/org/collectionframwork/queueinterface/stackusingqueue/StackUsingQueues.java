@@ -4,7 +4,7 @@ import java.util.LinkedList;
 import java.util.Queue;
 
 //Stack implemented using two queues
-class StackUsingQueues {
+public class StackUsingQueues {
     private Queue<Integer> queue1;
     private Queue<Integer> queue2;
 
