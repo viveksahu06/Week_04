@@ -8,12 +8,15 @@ import java.util.List;
 import java.util.ListIterator;
 
 public class NthElementFromLast {
-    public <T> T nthElementFromLast(List<T> items, int positionFromLat){
+    public <T> T nthElementFromLast(List<T> items, int positionFromLast){
+        if (positionFromLast <= 0) {
+            throw new IllegalArgumentException("Position must be greater than 0.");
+        }
         //By using Hare tortoise method
         ListIterator<T> first = items.listIterator();
         ListIterator<T> second = items.listIterator();
         //make a distance between upto k
-        for(int i=0;i<positionFromLat;i++){
+        for(int i=0;i<positionFromLast;i++){
             if(!first.hasNext()){
                 throw new IllegalArgumentException("position is larger than size");
             }
