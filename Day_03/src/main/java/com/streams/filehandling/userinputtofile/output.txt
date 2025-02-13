@@ -1,0 +1,12 @@
+Yor name is : vivek 
+Your age is : 23 
+Your favourite programming language is : java 
+.........................................................
+Yor name is : suraj
+Your age is : 21 
+Your favourite programming language is : c++ 
+.........................................................
+Yor name is : pratham 
+Your age is : 22 
+Your favourite programming language is : python 
+.........................................................
