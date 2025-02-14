@@ -1,1 +1,0 @@
-Hey, today we are going to learn exception handling in java.
