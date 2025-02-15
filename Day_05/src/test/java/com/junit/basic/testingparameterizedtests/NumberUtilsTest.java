@@ -16,7 +16,7 @@ public class NumberUtilsTest {
         assertTrue(numberUtils.isEven(number), number + " should be even");
     }
 
-    // Test for odd numbers
+    //Test for odd numbers
     @ParameterizedTest
     @ValueSource(ints = {1, 3, 5, 7, 9, -1, -3, 101})  // Odd numbers
     void testIsEvenForOddNumbers(int number) {
