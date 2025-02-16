@@ -20,10 +20,10 @@ public class CreateObjectReflection {
             // Getting Class object
             Class<?> clazz = Student.class;
 
-            // Accessing constructor
+            //Accessing constructor
             Constructor<?> constructor = clazz.getConstructor(String.class);
 
-            // Creating instance dynamically
+            //Creating instance dynamically
             Student student = (Student) constructor.newInstance("Alice");
 
             // Calling method
