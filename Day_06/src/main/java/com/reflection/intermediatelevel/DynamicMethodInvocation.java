@@ -26,7 +26,7 @@ public class DynamicMethodInvocation {
             Class<?> clazz = MathOperations.class;
             Object obj = clazz.getDeclaredConstructor().newInstance();
 
-            // Getting user input for method name and parameters
+            //Getting user input for method name and parameters
             System.out.print("Enter method name (add, subtract, multiply): ");
             String methodName = scanner.nextLine();
 
@@ -38,11 +38,11 @@ public class DynamicMethodInvocation {
 
             scanner.close();
 
-            // Accessing method dynamically
+            //Accessing method dynamically
             Method method = clazz.getMethod(methodName, int.class, int.class);
             int result = (int) method.invoke(obj, num1, num2);
 
-            // Printing the result
+            //Printing the result
             System.out.println("Result: " + result);
         } catch (Exception e) {
             e.printStackTrace();
